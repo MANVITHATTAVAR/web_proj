@@ -38,7 +38,7 @@ ul a{
     padding: 2px 20px;
     text-align: justify;
     margin: 10px;
-    width: 65%;
+    display: inline-block;
 }
 
 .img-title{
@@ -60,36 +60,43 @@ ul a{
 }
 
 .about{
-    float: right;
-    width: 25%;
     background-color: rgb(237, 237, 237);
     padding: 20px;
     margin: 10px;
+    display: block;
+
 
 }
 
 .popular{
-    float: right;
-    width: 25%;
     background-color: rgb(237, 237, 237);
     padding: 20px;
     margin: 10px;
+    display: block;
+
     
+}
+.left-colm{
+    float: left;
+    width: 65%;
+}
+
+.right-colm{
+    float: left;
+    width: 35%;
+
 }
 
 @media screen and (max-width:600px){
-    .feed{
+    .left-colm{
         width: 100%;
+        float: none;
 
     }   
-    .about{
+    .right-colm{
         width: 100%;
         float: none;
 
-    }
-    .popular{
-        width: 100%;
-        float: none;
     }
 
 }
